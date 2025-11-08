@@ -1,0 +1,64 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ruff",
+            "detail": "Run both \"ruff format\" and \"ruff check\"",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "ruff format",
+                "ruff check"
+            ],
+            "problemMatcher": [],
+            "icon": {
+                "id": "code",
+                "color": "terminal.ansiGreen"
+            },
+        },
+        {
+            "label": "ruff format",
+            "detail": "Run and apply the Ruff formatter on all files",
+            "command": "uv",
+            "windows": {
+                "options": {
+                    "cwd": "."
+                },
+                "command": "uv"
+            },
+            "args": [
+                "run",
+                "ruff",
+                "format"
+            ],
+            "problemMatcher": [],
+            "icon": {
+                "id": "code",
+            },
+            "hide": true,
+        },
+        {
+            "label": "ruff check",
+            "detail": "Run Ruff and check for lint violations in all files and try to fix them",
+            "command": "uv",
+            "windows": {
+                "options": {
+                    "cwd": "."
+                },
+                "command": "uv"
+            },
+            "args": [
+                "run",
+                "ruff",
+                "check",
+                "--fix"
+            ],
+            "problemMatcher": [],
+            "icon": {
+                "id": "code",
+            },
+            "hide": true,
+        }
+    ]
+}
