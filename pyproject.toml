@@ -9,7 +9,9 @@ version = "0.1.0"
 description = "Test create a blockchain"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "tox>=4.32.0",
+]
 
 [tool.ruff]
 line-length = 120

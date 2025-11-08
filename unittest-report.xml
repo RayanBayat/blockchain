@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="unittests.block_chain_test.test_blockchain.TestBlockChain-20251108214505" tests="4" file="unittests/block_chain_test/test_blockchain.py" time="0.038" timestamp="2025-11-08T21:45:05" failures="0" errors="0" skipped="0">
+		<testcase classname="unittests.block_chain_test.test_blockchain.TestBlockChain" name="test_add_block" time="0.009" timestamp="2025-11-08T21:45:05" file="tests/unittests/block_chain_test/test_blockchain.py" line="7"/>
+		<testcase classname="unittests.block_chain_test.test_blockchain.TestBlockChain" name="test_is_valid" time="0.001" timestamp="2025-11-08T21:45:05" file="tests/unittests/block_chain_test/test_blockchain.py" line="12"/>
+		<testcase classname="unittests.block_chain_test.test_blockchain.TestBlockChain" name="test_long_transaction_chain" time="0.028" timestamp="2025-11-08T21:45:05" file="tests/unittests/block_chain_test/test_blockchain.py" line="25"/>
+		<testcase classname="unittests.block_chain_test.test_blockchain.TestBlockChain" name="test_tampering_detection" time="0.001" timestamp="2025-11-08T21:45:05" file="tests/unittests/block_chain_test/test_blockchain.py" line="18"/>
+	</testsuite>
+</testsuites>
